@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project1/about_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Hello From"),
+              Text("ABout page"),
               Text(
                 "CYBROM",
                 style: TextStyle(fontSize: 30, color: Colors.red),
@@ -40,7 +39,7 @@ class HomePage extends StatelessWidget {
 Image.network("https://media.istockphoto.com/id/1458782106/photo/scenic-aerial-view-of-the-mountain-landscape-with-a-forest-and-the-crystal-blue-river-in.jpg?s=1024x1024&w=is&k=20&c=iPdhO2H3jeYh4UWmNlrXNmiiK04iaLykIMiD9u1yDq4="),              ElevatedButton(
                 onPressed: () {
                   print("Hello world");
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPage(),));
+                  Navigator.pop(context);
                 },
                 child: Text("SUBMIT"),
               ),
