@@ -148,6 +148,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
+
+
+
   List<ProductModel> products = [
     ProductModel(image: "assets/images 1.jpeg", name: "Mobile", price: 20.00),
     ProductModel(image: "assets/download.jpeg", name: "Headphones", price: 15.00),
